@@ -45,7 +45,7 @@ it('Should only allow 1 submit', () =>{
       cy.get('#login-button').click();
     }
 
-  // cy.get('#submitCount').should('not.have.text', '1');11111
+  // cy.get('#submitCount').should('not.have.text', '1');111112
   cy.get('window:alert', (txt) =>{
     expect(txt).to.equal('You have exceeded the maximum number of attempts')});
   });
